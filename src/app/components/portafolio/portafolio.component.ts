@@ -252,7 +252,7 @@ export class PortafolioComponent implements OnInit {
     AOS.init();
 
 
-    this.servicioGeneral.addSeo();
+
 
 
   }

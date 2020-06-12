@@ -137,16 +137,4 @@ export class GeneralService {
   }
 
 
-  addSeo(){
-    this.title.setTitle('Developer Jags ◾ Web Developer');
-    this.meta.addTags([
-      { name: 'twitter:site', content: '@jagalerasanchez' },
-      { name: 'twitter:description', content: 'Desarrollador web en Roquetas de Mar con mas de 4años de experiencia, titulado y experimentado.' },
-      { name: 'keywords', content: 'Jose Alberto Galera Sánchez,Jose Alberto,Jose Alberto Galera,Desarrollador web Roquetas de mar, Desarrollador web Roquetas, Programador Roquetas de Mar, Desarrollador web, Freelance Roquetas de Mar, Freelance Almería, Desarrollador Web Almería, Programador Almería'},
-      { name: 'robots', content: 'index, follow' },
-      { name: 'description', content: 'Desarrollador web en Roquetas de Mar! ◾ + 4 años de experiencia ◾ Titulado ◾ Informes desglosados ◾ Roquetas de Mar - Almería ' },
-      { name: 'geo.region', content: 'ES-AN' },
-      { name: 'geo.placename', content: 'Almería' },
-    ]);
-  }
 }
