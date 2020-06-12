@@ -64,7 +64,6 @@ _Agrega notas adicionales sobre como hacer deploy_
 * [Angular](https://angular.io/) - El framework web usado
 * [Bootstrap](https://getbootstrap.com/) - Framework de estilos
 * [BoxIcons](https://boxicons.com/) - Iconos
-* [Diversas librerias de NPM]
 
 
 ## Autores ✒️
