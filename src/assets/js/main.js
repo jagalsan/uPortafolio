@@ -97,6 +97,10 @@ $(function() {
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
   });
 
+  $('nav ul li a').click(function(){
+    $('#footer').removeClass('footer-activo');
+  })
+
   $(document).click(function(e) {
     var container = $(".mobile-nav-toggle");
     var color = $('.color');
