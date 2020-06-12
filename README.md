@@ -1,27 +1,62 @@
-# UPortofolio
+# uPortafolio ◾ Portafolio Theme 💻
+Tema para Angular,Bootstrap para uso gratuito
+<img src="https://img.shields.io/github/downloads/Unluucky04/uPortafolio/total?label=Descargas">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+## Comenzando 🚀
 
-## Development server
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Mira **Despliegue** para conocer como desplegar el proyecto.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pre-requisitos 📋
 
-## Build
+_Que cosas necesitas para instalar el software y como instalarlas_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+```
+◾ Necesitas tener instalado NPM -> https://nodejs.org/es/download/
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Instalación 🔧
 
-## Running end-to-end tests
+_Como descargar el proyecto_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+Desde tu terminal escribes el siguiente comando: git clone https://github.com/Unluucky04/uPortafolio uPortafolio
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Despliegue 📦
+
+_Para lanzar nuestro proyecto y empezar a ver los resultados del mismo_
+
+```
+Desde tu terminal escribes los siguientes comandos: 
+◾ cd uPortafolio -> Nos diriguimos a nuestro directorio, donde hemos almacenado nuestro proyecto.
+◾ npm install -> Comando que nos instalara todo lo necesario para hacer funcionar nuestro proyecto.
+◾ ng serve -o -> Comando que nos simulara un servidor y nos permitira entrar a nuestro proyecto
+```
+
+## Construido con 🛠️
+
+* [Angular](https://angular.io/) - El framework web usado
+* [Bootstrap](https://getbootstrap.com/) - Framework de estilos
+* [BoxIcons](https://boxicons.com/) - Iconos
+
+
+## Autores ✒️
+
+* **bootstrapmade** - *Theme Base* - [bootstrapmade](https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/)
+* **Jose Alberto Galera Sánchez** - *Adaptación a Angular* - [Jose Alberto Galera Sánchez](https://github.com/unluucky04)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (CC) - mira el archivo [LICENSE.md](https://github.com/Unluucky04/uPortafolio/blob/master/LICENSE) para detalles
+
+
+
+---
+Realizado por [Jose Alberto Galera Sánchez](https://github.com/unluucky04) 😊
