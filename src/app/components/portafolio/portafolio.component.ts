@@ -250,12 +250,7 @@ export class PortafolioComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
-    document.getElementById('bot').innerHTML = `<df-messenger
-    chat-title="Soporte | ¿En que te puedo ayudar?"
-    intent="WELCOME"
-    agent-id="4e3a2423-eedd-4132-a623-943513e96d18"
-    language-code="es"
-  ></df-messenger>`;
+
 
     this.servicioGeneral.addSeo();
 
