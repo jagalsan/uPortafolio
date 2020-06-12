@@ -55,13 +55,6 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 Este proyecto está bajo la Licencia (CC) - mira el archivo [LICENSE.md](https://github.com/Unluucky04/uPortafolio/blob/master/LICENSE) para detalles
 
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
 
 
 ---
