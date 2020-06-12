@@ -1,2 +1,2 @@
-# uPortofolio
-Theme Bootstrap/Angular Portofolio
+# uPortafolio
+Theme Bootstrap/Angular Portafolio
