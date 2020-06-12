@@ -1,5 +1,6 @@
 # uPortafolio ◾ Portafolio Theme 💻
 Tema para Angular,Bootstrap para uso gratuito
+<img src="https://img.shields.io/github/downloads/unluucky04/uPortafolio/total?label=Descargas">
 
 ## Comenzando 🚀
 
