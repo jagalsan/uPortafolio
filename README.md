@@ -65,4 +65,4 @@ Este proyecto está bajo la Licencia (CC) - mira el archivo [LICENSE.md](https:/
 
 
 ---
- ⌨️   con   ❤️   por [Jose Alberto Galera Sánchez](https://github.com/unluucky04) 😊
+Realizado por [Jose Alberto Galera Sánchez](https://github.com/unluucky04) 😊
