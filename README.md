@@ -19,45 +19,23 @@ _Que cosas necesitas para instalar el software y como instalarlas_
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+_Como descargar el proyecto_
 
 ```
-Da un ejemplo
+Desde tu terminal escribes el siguiente comando: git clone https://github.com/Unluucky04/uPortafolio uPortafolio
 ```
 
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Para lanzar nuestro proyecto y empezar a ver los resultados del mismo_
+
+```
+Desde tu terminal escribes los siguientes comandos: 
+◾ cd uPortafolio -> Nos diriguimos a nuestro directorio, donde hemos almacenado nuestro proyecto.
+◾ npm install -> Comando que nos instalara todo lo necesario para hacer funcionar nuestro proyecto.
+◾ ng serve -o -> Comando que nos simulara un servidor y nos permitira entrar a nuestro proyecto
+```
 
 ## Construido con 🛠️
 
