@@ -1,0 +1,220 @@
+<div id="main" [ngClass]="{'dark-theme':this.servicioGeneral.darkCheck,'light-theme':this.servicioGeneral.lightCheck}">
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>{{this.servicioGeneral.USUARIO.nombre}}</h1>
+      <p><ngx-typed-js [strings]="QUE_ERES" [loop]="true" [typeSpeed]="60">
+        I'm <span class="typing"></span>
+      </ngx-typed-js></p>
+    </div>
+  </section>
+  <section id="about"  data-aos="fade-up" class="about seccion1">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p><b>Desarrollador web titulado</b>, con experiencia de 4 años en el desarrollo web. Diariamente estoy autoformandome en las tecnologías mas punteras Laravel, Angular, NestJS..</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Imagen personal de Jose Alberto Galera Sánchez">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>UI/UX Designer &amp; Web Developer.</h3>
+          <p class="font-italic">
+            Me considero una persona profesional, competente y limpia con mi trabajo, llevo todos mis proyectos al día, trabajando por objetivos diarios.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Cumpleaños:</strong> 17 Diciembre 1999</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> {{servicioGeneral.USUARIO.web}}</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Ciudad:</strong> {{servicioGeneral.USUARIO.ciudad}},{{servicioGeneral.USUARIO.provincia}}</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Edad:</strong> {{servicioGeneral.USUARIO.edad}} años</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Estudios:</strong> {{ULTIMO_TITULO.nombre}}</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> {{servicioGeneral.USUARIO.email}}</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+           {{RESUMEN}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="skills" data-aos="fade-in" class="skills seccion2">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Habilidades</h2>
+        <p>Me considero un <b>desarrollador web experimentado </b>, dentro de lo que cabe, ya que desde que empece en el mundo de la programación he estado realizando proyectos y autoformandome diariamente para conseguir un nivel de programación alto.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 habilidades" data-aos="fade-up" *ngFor="let key of arrayHabilidades; let i = index" >
+          <div class="contenido">
+            <label for="">{{HABILIDADES[key].value}}
+              <p>{{HABILIDADES[key].descripcion}}</p>
+            </label>
+          <span class="float-right">{{HABILIDADES[key].porcentaje}}%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" [ngStyle]="{'width.%': HABILIDADES[key].porcentaje}" [attr.aria-valuenow]="HABILIDADES[key].porcentaje" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="curriculum" data-aos="fade-in" class="curriculum seccion1">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Curriculum</h2>
+        <p>Me considero una persona profesional con mi trabajo. Soy una persona autodidacta, aprendo rapido , de ser necesario me formaría en la tecnología necesaría. Entrego todos los proyectos a tiempo por muy dificultosos que sean.   </p>
+      </div>
+      <div class="w-100 linea-tiempo linea-tiempo-estudios">
+        <span class="tiempo" [attr.opcion]="[opcion]" *ngFor="let opcion of arrayTitulos">
+
+        </span>
+      </div>
+      <div class="row titulos">
+        <div class="col-md-4 titulo" [ngClass]="opcion" *ngFor="let opcion of arrayTitulos ; let i = index" >
+
+          <p class="m-0 encabezado-resume">{{TITULOS[opcion].titulo}}</p>
+          <span class="badge badge-info my-2">{{TITULOS[opcion].nivel}}</span>
+          <span class="badge badge-success ml-2">Nota media. {{TITULOS[opcion].nota}}</span>
+          <p class="descripcion">{{TITULOS[opcion].descripcion}}</p>
+          <p class="premio" *ngIf="TITULOS[opcion].premio!==''" ><span><i class='bx bxs-trophy' ></i></span> {{TITULOS[opcion].premio}} </p>
+          <p class="text-right fecha-resume"><span><i class='bx bx-calendar' ></i></span>{{TITULOS[opcion].tiempo}}</p>
+          <div  class="flechas">
+            <div *ngIf="i<arrayTitulos.length-1 && i<2"  class="flecha-siguiente">
+              <i class='bx bxs-chevron-right-circle'></i>
+            </div>
+            <div *ngIf="i===arrayTitulos.length-1"  class="flecha-down">
+              <i class='bx bxs-chevron-down-circle'></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="w-100 linea-tiempo linea-tiempo-trabajo">
+        <span class="tiempo"  [attr.opcion]="[opcion]" *ngFor="let opcion of arrayTrabajos">
+
+        </span>
+      </div>
+      <div class="row trabajos">
+        <div class="col-md-4 trabajo" [ngClass]="opcion" *ngFor="let opcion of arrayTrabajos; let i = index" >
+
+          <p class="encabezado-resume m-0">{{TRABAJOS[opcion].nombre}}</p>
+          <span class="badge badge-info my-2">{{TRABAJOS[opcion].contrato}}</span>
+          <p class="nombre-empresa m-0"><a [href]="[TRABAJOS[opcion].enlace]" target="_blank" rel="noopener noreferrer"><i class='bx bx-pin text-primary' ></i> {{TRABAJOS[opcion].empresa}}</a></p>
+          <p class="descripcion">{{TRABAJOS[opcion].descripcion}}</p>
+          <p class="text-right fecha-resume"><span><i class='bx bx-calendar' ></i></span>{{TRABAJOS[opcion].tiempo}}</p>
+          <div  class="flechas">
+            <div *ngIf="i<arrayTrabajos.length-1 && i<2"  class="flecha-siguiente">
+              <i class='bx bxs-chevron-right-circle'></i>
+            </div>
+            <div *ngIf="i===2"  class="flecha-down">
+              <i class='bx bxs-chevron-down-circle'></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="portafolio" data-aos="fade-in" class="portofolio seccion2">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portafolio</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center mb-4">
+          <div class="filtro-img w-25 m-auto">
+            <span *ngFor="let categoria of categoriasPortofolio"  class="btn btn-default filter-button" [attr.data-filter]="[categoria]">{{categoria}}</span>
+          </div>
+        </div>
+      <br/>
+
+
+
+          <div data-aos="fade-up" *ngFor="let proyecto of arrayProyectos" [ngClass]="PROYECTOS[proyecto].tipo" class="productos col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+              <img [attr.tipo]="[PROYECTOS[proyecto].tipo]" [src]="['./assets/img/portfolio/'+PROYECTOS[proyecto].imagen]" class="img-fluid img" [alt]="PROYECTOS[proyecto].alt">
+              <div class="enlaces">
+                <a *ngIf="PROYECTOS[proyecto].enlace!=='#'"  [href]="[PROYECTOS[proyecto].enlace]" target="_blank"><i class='bx bx-link'></i></a>
+                <a *ngIf="PROYECTOS[proyecto].enlace==='#'" target="_blank"><i class='bx bx-unlink' ></i></a>
+                <a class="abrirInfo" (click)="openDialog(proyecto)"><i class='bx bxs-info-square' ></i></a>
+              </div>
+          </div>
+
+
+      </div>
+    </div>
+
+  </section>
+  <section id="servicios" data-aos="fade-in" class="py-5 servicios seccion1">
+    <div class="container py-5 mb-5">
+
+      <div class="section-title p-0 pt-5">
+        <h2>Servicios</h2>
+      </div>
+
+      <div class="row">
+        <p class="mx-3">Cualquier otra información que necesite saber sobre los servicios que puedo ofrecerle a su proyecto, pregunte por correo y le contestare con mucho gusto. Aparte de estos servicios, puedo ofrecer servicios de diseño grafico para proyectos sencillos.</p>
+        <div class="row">
+          <div *ngFor="let servicio of arrayServicios"  class="servicio col-lg-4 col-md-6" >
+
+
+
+              <div class="icon-box">
+                <div class="icon" [innerHTML]="SERVICIOS[servicio].icon"></div>
+                <h4 class="title">{{SERVICIOS[servicio].titulo}}</h4>
+                <p class="description">{{SERVICIOS[servicio].descripcion}}</p>
+              </div>
+
+              <p></p>
+
+          </div>
+        </div>
+        <br>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <div class="float-right mr-3 colores">
+    <div class="row">
+      <div (click)="changeColor('light')" [ngClass]="{'color-activado':this.servicioGeneral.lightCheck,'':!this.servicioGeneral.lightCheck}"  class="col-5 color light-color">
+
+      </div>
+      <div (click)="changeColor('dark')" [ngClass]="{'color-activado':this.servicioGeneral.darkCheck,'':!this.servicioGeneral.darkCheck}" class="col-5 color dark-color">
+
+      </div>
+    </div>
+
+  </div>
+  <div id="bot">
+
+
+
+  </div>
+
+</div>

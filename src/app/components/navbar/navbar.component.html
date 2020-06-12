@@ -1,0 +1,32 @@
+<button type="button" [ngClass]="{'dark-theme':this.servicioGeneral.darkCheck,'light-theme':this.servicioGeneral.lightCheck}"  class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+<header id="header" [ngClass]="{'dark-theme':this.servicioGeneral.darkCheck,'light-theme':this.servicioGeneral.lightCheck}">
+  <div class="d-flex flex-column">
+
+    <div class="profile">
+      <img src="../assets/img/profile-img.jpg" alt="Imagen personal de Jose Alberto Galera Sánchez" class="img-fluid rounded-circle">
+      <h1 class="text-light"><a>{{this.servicioGeneral.USUARIO.nombre}}</a></h1>
+     <div> <span *ngIf="servicioGeneral.getDisponibilidad()==='Disponible'"  class="badge disponibilidad badge-success">{{servicioGeneral.getDisponibilidad()}}</span></div>
+      <div class="social-links mt-3 text-center">
+        <a target="_blank" *ngIf="servicioGeneral.REDES_SOCIALES.twitter"  [href]="servicioGeneral.REDES_SOCIALES.twitter" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a target="_blank" *ngIf="servicioGeneral.REDES_SOCIALES.linkedin" [href]="servicioGeneral.REDES_SOCIALES.linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" *ngIf="servicioGeneral.REDES_SOCIALES.github" [href]="servicioGeneral.REDES_SOCIALES.github" class="github"><i class="bx bxl-github"></i></a>
+        <a target="_blank" *ngIf="servicioGeneral.REDES_SOCIALES.freelance" [href]="servicioGeneral.REDES_SOCIALES.freelance" class="freelance"><i class='bx bxl-dev-to'></i></a>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a  href="#hero" (click)="scroll('hero',this)"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" (click)="scroll('about',this)" ><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#skills" (click)="scroll('skills',this)" ><i class='bx bxl-dev-to'></i> <span>Habilidades</span></a></li>
+        <li><a href="#curriculum" (click)="scroll('curriculum',this)"><i class="bx bx-file-blank"></i> <span>Curriculum</span></a></li>
+        <li id="enlaceProyectos"><a href="#portafolio" (click)="scroll('portafolio',this)"><i class="bx bx-book-content"></i> <span>Portafolio</span></a></li>
+        <li><a href="#servicios" (click)="scroll('servicios',this)" ><i class="bx bx-server"></i> <span>Servicios</span></a></li>
+
+
+      </ul>
+    </nav><!-- .nav-menu -->
+    <button type="button" #about class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  </div>
+</header>

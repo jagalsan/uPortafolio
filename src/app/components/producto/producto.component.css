@@ -1,0 +1,24 @@
+/** ESTILOS PARA EL TITULO DE LA INFORMACIÓN DEL PROYECTO**/
+
+.section-title {
+  padding-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  position: relative;
+  color: #020d1b;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #dd1414;
+  bottom: 0;
+  left: 0;
+}

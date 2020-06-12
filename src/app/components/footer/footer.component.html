@@ -1,0 +1,10 @@
+<footer id="footer" [ngClass]="{'dark-theme':this.servicioGeneral.darkCheck,'light-theme':this.servicioGeneral.lightCheck}">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright {{servicioGeneral.COPYRIGHT.year}} <strong><span> {{servicioGeneral.COPYRIGHT.copy}}</span></strong>
+    </div>
+    <div class="credits">
+      {{servicioGeneral.USUARIO.ciudad}} |  {{servicioGeneral.USUARIO.provincia}}
+    </div>
+  </div>
+</footer>
